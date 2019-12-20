@@ -1,0 +1,27 @@
+Universidade Federal da Fronteira Sul
+Curso de Ciência da Computação, Chapecó/SC
+CCR: Redes de Computadores – 2018.2
+Prof. Marco Aurélio Spohn
+
+T2 - Programação Socket e Roteamento
+Estudantes: Anderson Altair Tomkelski e Daniel Mello Konflanz
+
+Compilação: gcc ler_e_imprimir_estruturas.c roteador.c interface.c -o roteador -lpthread -Wall
+Execução: ./roteador {id do processo}
+Obs1: manter largura do terminal em ~120 colunas
+Obs2: por padrão, mensagens com vetores de distância e o log de mudanças da tabela
+de roteamento não são exibidos devido à poluição que causam. Para mostrá-los, altere
+o valor da constante EXIBIR_VETORES_DISTANCIA para 1 no arquivo structs_e_defines.h
+
+Formato dos pacotes:
+{id_origem} {id_destino} {numero_de_sequencia} {tipo_do_pacote} {mensagem}
+
+-> Se {tipo_do_pacote} for ID_PACOTE_DADOS,
+então o {numero_de_sequencia} será 0 ou 1 e o pacote será entregue de forma confiável
+
+-> Se {tipo_do_pacote} for ID_PACOTE_CONTROLE e o {numero_de_sequencia} for 0 ou 1,
+então esse é um pacote ACK que confirma o recebimento do pacote de dados
+com número de sequência {numero_de_sequencia}
+
+-> Se {tipo_do_pacote} for ID_PACOTE_CONTROLE e o {numero_de_sequencia} for -1,
+então esse é um pacote de vetores de distância
