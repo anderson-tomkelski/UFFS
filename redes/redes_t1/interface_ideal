@@ -1,0 +1,22 @@
+[14:46:50] <== Mensagem de roteador 5:
+[14:46:50]     Olá roteador 4
+[14:46:52] <-> Retransmitindo mensagem de roteador 2 para roteador 3.
+[14:47:30] ==> Enviando mensagem para roteador 5:
+[14:47:30]     Oi roteador 5
+[14:47:30] (=) Esperando ACK.
+[14:47:31] !=> ACK não recebido. Reenviando mensagem para roteador 5. Esperando ACK.
+[14:47:31] !=> ACK não recebido. Reenviando mensagem para roteador 5. Esperando ACK.
+[14:47:31] :-/ Isso é embaraçoso, mas não pudemos confirmar a entrega da mensagem.
+[14:47:50] ==> Enviando mensagem para roteador 5:
+[14:47:50]     Olá roteador 5!
+[14:47:50] (=) Esperando ACK.
+[14:47:51] !=> ACK não recebido. Reenviando mensagem para roteador 5. Esperando ACK.
+[14:47:51] :-) Confirmação de envio recebida.
+---------------------------------------------------------------------------------------------------
+ r                | Lista todos os roteadores 
+ g                | Mostra o grafo
+ t                | Mostra a tabela de roteamento
+ p {pprd}         | Define que este roteador perderá {pprd} por cento dos pacotes
+ m {idr} {msg}    | Manda a mensagem {msg} para o roteador {idr}
+---------------------------------------------------------------------------------------------------
+ linha de comando

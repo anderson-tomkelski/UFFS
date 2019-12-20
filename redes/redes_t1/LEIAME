@@ -1,0 +1,10 @@
+Universidade Federal da Fronteira Sul
+Curso de Ciência da Computação, Chapecó/SC
+CCR: Redes de Computadores – 2018.2
+Prof. Marco Aurélio Spohn
+
+T1 - Programação Socket e Roteamento
+Estudantes: Anderson Altair Tomkelski e Daniel Mello Konflanz
+
+Compilação: gcc ler_e_imprimir_estruturas.c preencher_tab_roteamento.c roteador.c interface.c -o roteador -lpthread -Wall
+Execução: ./roteador {id do processo}
