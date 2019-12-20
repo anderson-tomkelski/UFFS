@@ -1,0 +1,27 @@
+class Material{
+	private int codigo;
+	private int qtd;
+	private String nome;
+	
+	public Material(int codigo, String nome, int qtd){
+		this.codigo = codigo;
+		this.nome = nome;
+		abastecer(qtd);
+	}
+	public Material(int codigo, String nome){
+		this.codigo = codigo;
+		this.nome = nome;
+		this.qtd = 0;
+	}
+	
+	public void abastecer(int qtd){
+		if(qtd<0)
+			System.out.println("Quantidade inválida");
+		else
+			this.qtd += qtd;
+	}
+
+	public void retiradas(int qtd){
+
+	}
+}

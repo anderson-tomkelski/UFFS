@@ -1,0 +1,29 @@
+class Empresa{
+	String nome;
+	String cnpj;
+	Funcionario[] bodegueiros = new Funcionario[10];
+
+	public Empresa(String nomeEmpresa, cnpjEmpresa){
+		this.nome = nomeEmpresa;
+		this.cnpj = cnpjEmpresa;
+	}
+
+	public void Contrata(Funcionario novoFuncionario){
+		bodegueiros[novoFuncionario.numeroFuncionarios] = new Funcionario();
+	}
+
+	public void Demite(Funcionario novoFuncionario){
+		// Fazer
+	}
+	
+	public void Aumento(Funcionario f, double percentual){
+		f.salario += (percentual*f.salario)/2;
+	}
+
+	public void ImprimeFuncionarios(){
+		for(int i=0; i<bodegueiros.length; i++){
+			pessoa = this.bodegueiros[i]
+			System.out.println("Ordem do funcionário [" + i + "]\n" pessoa);
+		}
+	}
+}

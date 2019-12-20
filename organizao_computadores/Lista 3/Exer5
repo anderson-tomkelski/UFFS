@@ -1,0 +1,5 @@
+5 - Explique o funcionamento da tabela Look-up associativa como predição dinâmica.
+
+Armazena o endereço das instruções de desvio condicional mais recentemente executadas e os endereços destino desses desvios.
+Quando ocorre um desvio condicional, é feita uma busca pelo endereço do desvio na tabela, caso encontrado, e um bit de validade esteja ligado, o endereço de desvio armazenado na tabela é usado. A instrução é executada e então o endereço de desvio efetivo é armazenado na tabela.
+Ultiliza um contador para verificar predição. utiliza a "Branch history table".

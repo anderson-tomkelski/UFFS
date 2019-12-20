@@ -1,0 +1,7 @@
+11.Utilizando a alocação encadeada uma lista pode ser implementada de algumas formas, cite-as:
+
+R:
+Uma lista pode ser implementada principalmente de três formas:
+	Unicamente ou simplesmente encadeada - Neste caso temos uma estrutura armazenando o conteúdo desejado e temos um endereço junto com a estrutura, no qual um elemento aponta para o próximo e o último elemento aponta para NULL, nenhum elemento aponta para trás ou de volta ao primeiro elemento.
+	Duplamente encadeada - Neste caso temos uma estrutura armazenando o conteúdo desejado e temos dois endereços, no qual um elemento aponta para o próximo e o próximo aponta para o um, ou seja, um elemento aponta para seus dois vizinhos, o da frente e o de trás. No caso do primeiro elemento, o vizinho de trás é NULL e no caso do ultimo elemento o próximo vizinho também é NULL.
+	Circular - Neste caso temos uma estrutura armazenando o conteúdo desejado e temos um endereço, no qual um elemento aponta para o próximo e o último elemento aponta para o primeiro novamente, porém nenhum elemento aponta para trás. Nesse tipo de implementação não faz mais sentido dizer qual é o primeiro e o último elemento, porém deve-se tomar muito cuidado para que nos métodos a varredura na lista não entre num loop infinito.

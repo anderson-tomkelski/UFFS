@@ -1,0 +1,21 @@
+Etapas do ciclo de instrução
+1 - Busca de instrução
+	A instrução é buscada na memória de instrução a partir do endereço gravado no PC. Após isso, o PC grava o valor da próxima instrução.
+
+Instruções aritméticas
+	É usado o banco de registradores para armazenar operandos e o resultado das operações.
+	A ALU é usada para realizar as operações. O bloco de controle determina qual instruções está sendo executada
+
+Instrução de acesso e escrita a memória
+	O endereço de escrita é obtido a partir da soma do endereço gravado num registrador com um valor imediato, esse processo ocorre entre a ALU e o banco
+	de registradores. Após calculado o endereço, o valor passado é gravado na memória de dados.
+	O processo de leitura é semelhante ao de escrita, após saber o endereço buscado na memória de dados, é retornado o valor para um registrador de escrita
+	O blco de controle é responsável por permitir as escritas na memória de dados e no banco de registradores.
+	
+Instruções de desvio condicional
+	Basicamente vai deslocar o PC para um endereço maior do que apenas o da próxima instrução. É realizada uma soma de um deslocamento com o PC. A ALU verifica
+	se a condição para o salto é verdadeira, em caso positivo é somado o PC com o endereço de salto, em caso negativo, o PC soma a quantidade de bytes necessários
+	para chegar na próxima instrução.
+	
+A primeira operação de busca de instruções é feita em todo o ciclo de clock, as demais descritas, dependem do tipo de instruções lida na primeira operação 
+de busca.

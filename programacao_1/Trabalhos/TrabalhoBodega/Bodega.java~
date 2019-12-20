@@ -1,0 +1,19 @@
+class Bodega{
+    public static void main(String[] args){
+	Empresa JoaozinhoBodega = new Empresa("JoazinhoBar", "699.884.680.001-32");
+
+        Endereco endereco = new Endereco("Rua 7", "Bairro 13", "Jerusalém", 72);
+	Funcionario f1 = new Funcionario("Jesus", "860.261.813-18", endereco, "3323-7777", "Produção de vinho fino", 1860.00);
+	JoazinhoBodega.Contrata(f1);
+
+	Endereco endereco = new Endereco("Rua 7", "Bairro 13", "Jerusalém", 73);
+	Funcionario f1 = new Funcionario("Judas", "385.019.499-06", endereco, "98848-7777", "Balconista", 1000.00);
+	JoazinhoBodega.Contrata(f1);
+
+	Endereco endereco = new Endereco("Rua 7", "Bairro 13", "Jerusalém", 74);
+	Funcionario f1 = new Funcionario("Pedro", "362.975.187-34", endereco, "99987-7777", "Segurança", 1200.00);
+	JoazinhoBodega.Contrata(f1);
+
+	
+    }
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Domotica</string>
+    <string name="sala">Sala</string>
+    <string name="cozinha">Cozinha</string>
+    <string name="config">Configurações</string>
+    <string name="lampSala">Lâmpada Sala</string>
+    <string name="tv">TV</string>
+    <string name="ipText">Novo IP</string>
+    <string name="ok">OK</string>
+</resources>

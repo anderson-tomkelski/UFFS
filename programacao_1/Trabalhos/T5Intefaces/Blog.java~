@@ -1,0 +1,130 @@
+import java.util.*;
+class Blog{
+    public static void main(String[] args){
+	Scanner sc = new Scanner(System.in);
+	ArrayList<Post> posts = new ArrayList<Post>();
+	Post newPost = null;
+	int opc;
+	int index;
+	do{
+	    opc = Menu();
+	    switch(opc){
+	    case 1:
+		System.out.print("\033[H\033[2J");
+		newPost = new News();
+		readData(newPost);
+		posts.add(newPost);
+		break;
+	    case 2:
+		System.out.print("\033[H\033[2J");
+		newPost = new ProductReview();
+		readData(newPost);
+		posts.add(newPost);
+		break;
+	    case 3:
+		System.out.print("\033[H\033[2J");
+		newPost = new Post();
+		readData(newPost);
+		posts.add(newPost);
+		break;
+	    case 4:
+		System.out.print("\033[H\033[2J");
+		showAll(posts);
+		break;
+	    case 5:
+		System.out.print("\033[H\033[2J");
+		System.out.println("Digite o código do post que deseja dar \"like\": ");
+		index = sc.nextInt();
+		if(index > posts.size())
+		    System.out.println("Post inexistente");
+		else{
+		    newPost = posts.get(index);
+		    newPost.like();
+		}
+		break;
+	    case 6:
+		System.out.print("\033[H\033[2J");
+		System.out.println("Digite o código do post que deseja dar \"Dislike\": ");
+		index = sc.nextInt();
+		if(index > posts.size())
+		    System.out.println("Post inexistente");
+		else{
+		    newPost = posts.get(index);
+		    newPost.dislike();
+		}
+		break;
+	    case 10:
+		System.out.print("\033[H\033[2J");
+		System.out.println("Saindo");
+		break;
+	    default:
+		System.out.println("Opção digitada inválida, por favor escolha novamente: ");
+	    }
+	}while(opc != 10);
+    }
+
+    public static void showAll(ArrayList<Post> lista){
+	for(Post p : lista){
+	    if(p instanceof News){
+		News n = (News)p;
+		n.show();
+	    }else if(p instanceof ProductReview){
+		ProductReview pr = (ProductReview)p;
+		pr.show();
+	    }else
+		p.show();
+	}
+    }
+
+    public static void readData(Post p){
+	Scanner sc = new Scanner(System.in);
+	String title;
+	String content;
+	System.out.println("Digite o titulo do post: ");
+	title = sc.nextLine();
+	System.out.println("Digite o conteudo do post: ");
+	content = sc.nextLine();
+	if(p instanceof News){
+	    System.out.println("Digite a fonte da noticia: ");
+	    String source = sc.nextLine();
+	    News news = (News)p;
+	    news.setTitle(title);
+	    news.setContent(content);
+	    news.setSource(source);
+	}else if(p instanceof ProductReview){
+	    ProductReview product = (ProductReview)p;
+	    System.out.println("Digite o nome da marca: ");
+	    String brand = sc.nextLine();
+	    int stars;
+	    do{
+		System.out.println("Digite a quantidade de estrelas: ");
+		stars = sc.nextInt();
+		if(stars < 0 || stars > 10)
+		    System.out.println("Quantidade de estrelas inválida, favor, avalie com um valor entre 0 e 10");
+	    }while(stars < 0 || stars > 10);
+	    product.setTitle(title);
+	    product.setContent(content);
+	    product.setBrand(brand);
+	    product.evaluate(stars);
+	}else{
+	    p.setTitle(title);
+	    p.setContent(content);
+	}
+    }
+
+    public static int Menu(){
+	Scanner sc = new Scanner(System.in);
+	System.out.println("BLOG: O que voce quer fazer? ");
+	System.out.println("1 - Novo post de noticia");
+	System.out.println("2 - Nova resenha de produto");
+	System.out.println("3 - Novo post de outros assuntos");
+	System.out.println("4 - Listar todas as postagens");
+	System.out.println("5 - Curtir uma postagem");
+	System.out.println("6 - Nao curtir uma postagem");
+	System.out.println("10 - Sair");
+	System.out.println("Escolha a opção: ");
+
+	return sc.nextInt();
+
+    }
+}

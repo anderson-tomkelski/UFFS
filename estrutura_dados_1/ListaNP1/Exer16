@@ -1,0 +1,28 @@
+16.Fichas idênticas são empilhadas de tal forma que, assim que a pilha inicial recebe a sexta ficha, ela é dividida em duas novas pilhas: uma com 4 fichas e outra com 2. A partir daí, as fichas continuam a ser empilhadas, sendo colocadas alternadamente em cada pilha, na ordem decrescente das suas alturas. Assim que alguma das pilhas formadas recebe a sexta ficha, essa pilha é dividida em duas novas pilhas, uma com 4, outra com 2 fichas e as fichas continuam a ser empilhadas seguindo o mesmo procedimento.
+
+No momento em que a ficha 19 vai ser colocada, há:
+2 pilhas de 5 fichas e 2 pilhas de 4 fichas.
+2 pilhas de 4 fichas, 2 pilhas de 3 fichas e 2 pilhas de 2 fichas.
+1 pilha de 5 fichas, 3 pilhas de 4 fichas, 1 pilha de 3 fichas e 1 pilha de 2 fichas.
+1 pilha de 5 fichas, 2 pilhas de 4 fichas, 2 pilhas de 3 fichas e 1 pilha de 2 fichas.
+1 pilha de 5 fichas, 2 pilhas de 4 fichas, 1 pilha de 3 fichas e 1 pilha de 2 fichas. - RESPOSTA
+
+R:
+pilha	    	    19 fichas
+4 - 2     	  = 13 fichas
+5 - 2     	  = 12 fichas
+5 - 3     	  = 11 fichas
+6 - 3     	  = 10 fichas
+4 - 3 - 2 	  = 10 fichas
+5 - 3 - 2 	  = 9 fichas
+5 - 4 - 2 	  = 8 fichas
+5 - 4 - 3         = 7 fichas
+6 - 4 - 3         = 6 fichas
+4 - 4 - 3 - 2     = 6 fichas
+5 - 4 - 3 - 2     = 5 fichas
+5 - 5 - 3 - 2     = 4 fichas
+5 - 5 - 4 - 2     = 3 fichas
+5 - 5 - 4 - 3     = 2 fichas
+6 - 5 - 4 - 3     = 1 ficha
+5 - 4 - 4 - 3 - 2 = 1 ficha - Antes da 19ª ficha ser colocada
+

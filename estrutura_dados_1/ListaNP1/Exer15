@@ -1,0 +1,14 @@
+15.As estruturas de dados lineares (fila, pilha e lista) são muito utilizadas para resolver problemas computacionais. Cada uma dessas estruturas pode ser implementada com diferentes características e atendem a diferentes tipos de problemas. Sobre as características dessas estruturas de dados, atribua V (verdadeiro) ou F (falso) para as afirmativas a seguir.
+
+(V)Em uma pilha, o último elemento a entrar é o primeiro a sair.
+(F)Em uma fila, o primeiro elemento a entrar é o último a sair.
+(F)Uma lista permite que as inserções possam ser feitas em qualquer lugar (posição), mas as remoções, não.
+(F)Em uma lista circular com encadeamento simples, o primeiro elemento aponta para o segundo e para o último.
+(V)Para remover um elemento de uma lista duplamente encadeada, deve-se alterar o encadeamento dos elementos anterior e próximo ao elemento removido.
+
+Assinale a alternativa que contém, de cima para baixo, a sequência correta
+A( ) V, F, V, F, V.
+B( ) V, F, F, V, F.
+C(X) V, F, F, F, V.
+D( ) F, V, V, F, F.
+E( ) F, F, V, V, V.

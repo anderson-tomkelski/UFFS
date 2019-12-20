@@ -1,0 +1,3 @@
+O diretório FontesBananaPi contém os arquivos fontes Java que rodam no BananaPi e apenas compilam no BananaPi.
+
+O diretório Domotica é o projeto de telas android para enviar os sinais que controlam as GPIOs no BananaPi

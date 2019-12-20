@@ -1,0 +1,10 @@
+5.Discuta vantagens e desvantagens de vetores em relação a listas encadeadas (implementadas num vetor ou dinamicamente). Dê atenção especial as questões de quantidade de memória, velocidade de inserção, remoção e acesso.
+
+R:
+Como vantagens de listas encadeadas podemos observar, que não temos mais o problema de deslocamento de nós e não precisamos saber previamente o número de elementos a serem armazenados. Em relação aos vetores os elementos podem ser facilmente inseridos ou removidos, sem a necessidade de realocação ou reorganização de toda a estrutura, uma vez que os nós não precisam ser armazenados em sequência na memória.
+Como desvantegens podemos observar, o problema no acesso dos dados, não conseguimos acessá-los de maneira direta e em tempo constante. Também é necessário mais operações para manter a integridade dos dados.
+
+Referências
+http://www.facom.ufu.br/~anilton/EQQ09%20PD%20Eng.Quimica/lista_encadeada.pdf
+
+

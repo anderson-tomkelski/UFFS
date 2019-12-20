@@ -1,0 +1,40 @@
+class Bebida{
+	String nome;
+	double teorAlcoolico;
+	double preco;
+	int quantidadeML;
+	int estoque;
+
+	public Bebida(){
+
+	}
+
+	public String Comprar(int quantidade){
+		if(quantidade > 0)
+			this.estoque += quantidade;
+			return "Quantidade em estoque: " + this.estoque;
+		else
+			return "Pedido inválido!";
+	}
+
+	public String Vender(int quantidade){
+		if(confereEstoque){
+			estoque -= quantidade;
+			return "Total da compra: " + this.preco*quantidade;
+		} else
+			System.out.println("Estoque insuficiente!");
+	}
+
+	public boolean confereEstoque(int quantidade){
+		if(this.estoque > 0 && quantidade > 0)
+			return true
+		else
+			return false
+	}
+
+	public String toString(){
+		return "Nome: " + this.nome + "\nPreço: " + this.preco + "\nTamanho: " + this.quantidadeML + " ML " 
+			+ "\nTeor Alcoólico: " + this.teorAlcoolico + "%" + "\nQuantidade Disponível: " + this.estoque;
+	}
+	
+}

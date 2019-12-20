@@ -1,0 +1,28 @@
+O trabalho consiste em implementar uma lista duplamente encadeada baseado na estrutura de dados abaixo da linguagem C que representa um nodo da lista, que deve ser traduzido para assembly. Além da lista duplamente encadeada deve ser implementado o médoto de ordenação Radix Sort. Toda a implementação é em assembly do MIPS.
+
+typedef struct _nodo{
+    int n;
+    struct _contato *ant;
+    struct _contato *prox;
+} TpNodo;
+
+Participantes: 2 por grupo.
+
+As notas seguiram os seguintes critérios abaixo:
+
+ - Inserção na lista duplamente encadeada: 2 pts
+
+- Remoção na lista duplamente encadeada: 2pts
+
+- Busca e atualização na lista duplamente encadeada: 2 pts
+
+- Ordenação da lista duplamente encadeada com Radix Sort: 3,5 pts
+
+- Exibição dos elementos da lista duplamente encadeada: 0,5 pts
+
+Este trabalho terá peso de 50% na nota dos trabalhos. Na data posterior a data limite de entrega o trabalho deve ser apresentado individualmente em sala de aula.
+
+
+
+Alunos: Anderson Altair Tomkelski, Everton Assis
+

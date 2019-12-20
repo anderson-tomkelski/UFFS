@@ -1,0 +1,11 @@
+3 - a) Multiplexador apenas necessita apenas de lógica combinacional, a partir de um seletor, escolhe uma saida
+
+b) Deslocador necessita apenas de lógica combinacional
+
+c) Registrador necessita de lógica sequencial
+
+d) Memória necessita de lógica sequencial
+
+e) ALU necessita de lógica combinacional e sequencial
+
+f) Máquina de estados finitos genéricos  (FSM) necessita de lógica sequencial e combinacional

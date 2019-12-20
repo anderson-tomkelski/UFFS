@@ -1,0 +1,13 @@
+class Nota{
+	Data data;
+	String info;
+	
+	public Nota(String dataNota, String infoNota){
+		this.data = dataNota;
+		this.info = infoNota;
+	}
+
+	public String toString(){
+		return "\nData: " + this.data +"\nLembrar: " + this.info;
+	}
+}

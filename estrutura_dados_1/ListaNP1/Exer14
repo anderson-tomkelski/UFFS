@@ -1,0 +1,16 @@
+14.No desenvolvimento de um software que analisa bases de DNA, representadas pelas letras A, C, G, T, utilizou-se as estruturas de dados: pilha e fila. Considere que, se uma sequência representa uma pilha, o topo é o elemento mais à esquerda; e se uma sequência representa uma fila, a sua frente é o elemento mais à esquerda
+Analise o seguinte cenário: “a sequência inicial ficou armazenada na primeira estrutura de dados na seguinte ordem: (A,G,T,C,A,G,T,T). Cada elemento foi retirado da primeira estrutura de dados e inserido na segunda estrutura de dados, e a sequência ficou armazenada na seguinte ordem: (T,T,G,A,C,T,G,A). Finalmente, cada elemento foi retirado da segunda estrutura de dados e inserido na terceira estrutura de dados e a sequência ficou armazenada na seguinte ordem: (T,T,G,A,C,T,G,A)”.
+Qual a única sequência de estruturas de dados apresentadas a seguir pode ter sido usada no cenário descrito acima? E elabore todos os passos da sequência.
+A[A] Fila - Pilha - Fila. 
+B[ ] Fila - Fila - Pilha. 
+C[ ] Fila - Pilha - Pilha. 
+D[ ] Pilha - Fila - Pilha. 
+E[ ] Pilha - Pilha - Pilha.
+
+R:
+O primeiro deve ser um fila pois o primeiro a sair é o elemento A, com isso já percebemos que a próxima estrutura só pode ser uma pilha, pois o ultimo elemento a sair será o A, ou seja, o elemento mais no topo é o T. Após, podemos perceber que de uma pilha fomos para um fila, pois o primeiro elemento que foi desempilhado 'T' continua sendo a cabeça da estrutura.
+
+AGTCAGTT
+TTGACTGA
+TTGACTGA
+

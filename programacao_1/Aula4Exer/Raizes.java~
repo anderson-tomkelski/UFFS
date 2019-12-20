@@ -1,0 +1,4 @@
+class Raizes{
+	float numa;
+	float numb;
+}

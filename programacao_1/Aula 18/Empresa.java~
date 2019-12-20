@@ -1,0 +1,9 @@
+public class Empresa{
+    Empregado[] emps = new Epregado[10];
+    int n = 0;
+    
+    public void registrar(Empregado emp){
+	emps[n] = emp;
+	n++;
+    }
+}

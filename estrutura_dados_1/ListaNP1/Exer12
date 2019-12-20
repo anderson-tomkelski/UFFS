@@ -1,0 +1,4 @@
+12.Defina as operações de uma FILA, e uma PILHA. Mostre exemplos.
+R:
+O conceito FILA é o mesmo que em inglês, FIFO (First In First Out), ou seja, o primeiro elemento a entrar na fila é o primeiro a sair, muito parecido com as filas que estamos acostumados no nosso dia-a-dia, como a fila do supermercado, banco...
+O conceito de PILHA é o mesmo que em inglês, LIFO (Last In First Out), ou seja, o primeiro elemento a entrar é o último a sair, pois a pilha coloca um elemento em cima do outro, semalhante com o empilhamento que estamos acostumados no nosso dia-a-dia, por exemplo, uma pilha de copos, precisamos pegar o ultimo copo que foi colocado, que é o copo que está mais em cima, do contrário, a pilha toda vem abaixo.

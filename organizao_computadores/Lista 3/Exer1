@@ -1,0 +1,3 @@
+1 - a) Conseguiriamos inciar a próxima operação da ALU 50ps antes do tempo, porém, como a busca e a leitura de registradores levam o mesmo tempo, reduzir apenas o tempo da ALU não afetaria no desempenho do pipeline.
+
+b) Se demorar mais tempo para executar a ALU levaremos mais tempo para executar a próxima instrução, e no pipeline, a dependencia de dados ficaria maior (precisariamos de mais processos bolha para resolver o problema), o que diminuiria o desempenho do pipeline

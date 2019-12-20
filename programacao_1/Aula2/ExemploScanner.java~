@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class ExemploScanner {
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		char x;
+		System.out.println("Qual valor de x? ");
+		x = sc.nextLine().charAt(0);
+		sc.nextLine(); //Para Esvaziar o buffer
+		System.out.println(x);
+	}
+}

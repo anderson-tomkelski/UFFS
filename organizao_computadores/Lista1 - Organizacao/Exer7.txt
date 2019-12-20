@@ -1,0 +1,23 @@
+7 - a) O primeiro multiplexador decide se é uma busca de instrução a partir do PC ou um Store a partir de um endereço calculado. O MIPS multiciclo tem apenas
+	uma memória, tanto para dados quanto para o programa.
+	
+	O segundo multiplexador, decide em qual registrador vai escrever.
+	
+	O terceiro multiplexador decidade se o dado a ser colocado num registrador vem da memória ou se é resultado de uma operação aritmética.
+	
+	O multiplexador de duas entradas presente antes da ALU, decide se vai fazer uma soma com o registrador da saída do banco de registradores ou se vai somar
+	o endereço de PC.
+	
+	O multiplexador de quatro entradas decide entre, o outro registrador da saída do banco de registradores, 4 que é a quantidade de bytes somada ao PC, ou
+	32 bits no caso de jump ou 32 bits multiplicados por 4 no caso de desvio condicional
+	
+	O registrador após a saída da ALU decide qual vai ser o novo endereço que PC irá apontar, podendo ser um novo endereço de desvio condicial, desvio
+	incondicional ou apenas PC + 4
+	
+7- b)
+	Os registradores A e B são os operandos da instrução, utilizados para operações aritméticas, desvios, leitura e escrita...
+	O registrador de instrução é responsável por buscar os registradores que serão utilizados e por informar ao bloco de controle qual operação está 
+	sendo realizada.
+	O registrador de dados da memória, armazena um dado da memória que será escrito num registrador.
+	ALU_OUT é a saída de toda a operação lógica e aritmética realizada na ULA
+	

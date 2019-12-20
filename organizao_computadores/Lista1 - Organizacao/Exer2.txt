@@ -1,0 +1,49 @@
+A) Modo de endereçamento
+	Modo Imediado: O dado a ser manipulado está indicado no próprio campo operando
+	da instrução.Tem como vantagem pouco acesso a memória e como desvantegem a
+	limitação do campo operando, que restringe o valor máximo a ser manipulado
+	
+	Modo direto: O valor contido no campo operando indica o endereço de memória onde
+	está o dado a ser manipulado.
+	
+	Modo indireto: O campo operando representa uma célula de memória, o valor contido
+	neste endereço é o endereço onde o dado se encontra.
+	
+	Direto por registrador: O campo operando representa o número do registrador onde
+	o dado se encontra. Tem como vantagem o acesso ao registrador, que é mais rápido
+	que a memória e precis de um número menor de bits para endereçar os registradores
+	
+	Indireto por registrador: O registrador aponta para o endereço de memória onde o
+	dado se encontra. Pode ser implementado de diversas maneira, um dos casos principais
+	é a Base + deslocamento.
+		Base + deslocamento: O registrador base aponta para o início de um bloco
+		e o deslocamento informa qual é o deslocamento dentro daquele bloco.
+		
+B) Formato de instruções
+	3 operandos: Instrução é completa (não sobrescreve valor)
+		Quantidade de operandos pode limitar o espaço de endereçamento ou valor 
+		representado.
+		Ex: ADD Op1, Op2, Op3	# Op1 = Op2 + Op3
+	
+	2 Operandos: Não é completa,
+		Ex: Add Op1, Op2 # Op1 = Op1 + Op2
+	
+	1 Operando: Utiliza um registrador especial. As operações ocorrem entre o operando e esse
+		registrador.
+		Ex: ADD Op		# W = W + Op  ---> Onde W é o registrador especial
+	
+	0 Operandos: A própria instrução indica o dado/operando manipulado, ou a instrução
+		não exige dado ou operando 
+		Ex: NOP     # no Operation
+			CLRW	# W = 0 	----> Onde W é o registrador especial
+			
+C) Classes de instruções
+	Podem ser de três tipos. Lógica e Aritmética; Acesso a memória; Transferência de controle
+	Lógica e aritmética (R):
+		ADD r1, r2, r3 # Soma entre r2 e r3 onde o resultado é armazenado em r1
+	
+	Acesso a memória (I):
+		LW r1, 0(r2)   # Carrega para r1 o dado que está no endereço r2
+		
+	Transferência de controle (J):
+		J label  # Faz um jump para um label que é um endereço na memória de programa

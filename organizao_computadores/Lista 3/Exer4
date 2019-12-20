@@ -1,0 +1,5 @@
+1 - add $3, $4, $2
+2 - sub $5, $3, $1
+Resolve por stall entre 1 e 2, pois tem que esperar gravar
+3 - lw $6, 200($3) -- Resolve por forwarding, por ser um load, podendo acessar diretamente do banco de registradores ou alinhar o pipeline
+4 - add $7, $3, $6 -- NOvamente resolve por stall pois tem que esperar gravar

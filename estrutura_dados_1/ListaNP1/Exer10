@@ -1,0 +1,5 @@
+10.Cite algumas operação primitivas necessárias a uma implementação de uma lista.
+
+R:
+Criação de uma estrutura (struct) para armazenar os dados que serão armazenados, podendo ser uma string, um inteiro... além de armazenar o endereço para o próximo elemento (em listas simples e listas circulares) e armazenar o endereço para o elemento anterior (em listas duplamente encadeadas).
+Os metodos de inserção devem ser implementados para armazenar o valor dezejado e realizar o aponteiramento correto dependendo da posição que está sendo inserido (inicio, meio, fim), muito parecidos com o método de exclusão que é feito buscando algum valor por exemplo e refazendo o aponteiramento, que por sua vez é muito parecido com o metodo de busca, onde a lista deve ser varrida até encontrar o valor desejado.

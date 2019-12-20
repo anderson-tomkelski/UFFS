@@ -1,0 +1,10 @@
+6. Exemplifique cada uma das dependências de dados abaixo:
+	a. Dependência verdadeira (read – after - write)
+		A instrução que vem após, necessita de um dado anteriormente gravado, ou seja, a instrução posterior, precisa pegar o dado atualizado da instrução anterior.	
+
+	b. Antidependência (write – after - read)
+		Problema em processadores superescalares, o problema é que o operador da instrução anterior lê um valor que será escrito na instrução posterior, logo, precisamos garantir que a leitura antes da escrita.
+
+
+	c. Dependência de saída (write – after - writer)
+		Instrução anterior e posterior escrevem no mesmo registrador, precisamos garantir que a instrução anterior escreva o valor no registrador antes que a instrução posterior. Também é um problema de processador superescalar, onde instruções são executadas independentemente.

@@ -1,0 +1,28 @@
+class Funcionario{
+	int idFuncionario;
+	static int numeroFuncionarios;
+	double salario;
+	String nome;
+	String cpf;
+	String funcao;
+	String telefone;
+	Endereco endereco;
+
+	public Funcionario(){
+		numeroFuncionarios++;
+	}
+
+	public Funcionarios(String nomeFunc, String cpfFunc, Endereco enderecoFunc, String telefoneFunc, String FuncaoFunc, double salarioInicial){
+		this.nome = nomeFunc;
+		this.cpf = cpfFunc;
+		this.endereco = enderecoFunc;
+		this.telefone = telefoneFunc;
+		this.funcao = FuncaoFunc;
+		this.salario = salarioInicial;
+		idFuncionario++;
+	}
+
+	public String toString()[
+		return "Nome: " + this.nome + "\nCPF: " + this.cpf + "\nEndereco: " + this.endereco + "\nTelefone: " + this.telefone + "\nFunção: " this.funcao + "Salário: " + this.salario;
+	}
+}
